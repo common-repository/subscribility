@@ -1,0 +1,248 @@
+#hidden_cc_form{
+    display:none;
+}
+
+.wp99234_meta_item{
+    margin-bottom:40px;
+}
+
+h4.wp99234_meta_title,
+h4.wp99234_product_member_prices_title {
+    font-size:16px;
+}
+
+.woocommerce .blockUI.blockOverlay:before {
+    height: 1em;
+    width: 1em;
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -.5em;
+    margin-top: -.5em;
+    display: block;
+    -webkit-animation: none;
+    -moz-animation: none;
+    animation: none;
+    content: "";
+    background: url(../images/ajax-loader.gif) center center;
+    background-size: cover;
+    line-height: 1;
+    text-align: center;
+    font-size: 2em;
+}
+
+p.membership-benefits {
+    display: none;
+}
+
+.ui-datepicker {
+  background: #fff;
+}
+
+#wp99234-disclaimer_overlay,#wp99234-disclaimer-overlay {
+  position:fixed;
+  top:0;
+  right:0;
+  bottom:0;
+  left:0;
+  z-index:9000;
+  overflow-y:scroll;
+  background:rgba(40,40,40,.75);
+}
+
+/* Improve the appearance of the width of disclaimer on mobiles */
+
+.wp99234-disclaimer-window {
+  position:absolute;
+  top:50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: 5px;
+  padding: 30px;
+  background-color:rgba(255,255,255,.95);
+  text-align: center;
+}
+
+@media only screen and (min-width:320px) and (max-height: 1024px) and (orientation: portrait){
+  .wp99234-disclaimer-window {
+    min-height:25%;
+    left: 25%;
+    right: 25%;
+    top: 25%;
+    transform: translate(-25%, -25%);
+    width: 95%;
+  }
+  #wp99234-disclaimer_overlay,#wp99234-disclaimer-overlay {
+    padding:30px;
+  }
+}
+
+/* iPhone Plus / Pixel 2 Sizes and below in landscape */
+@media only screen and (min-width:320px) and (min-height: 320px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 2){
+  .wp99234-disclaimer-window {
+    margin: auto;
+    min-width: 90%;
+    min-height: 50%;
+  }
+  #wp99234-disclaimer_overlay,#wp99234-disclaimer-overlay {
+    padding: 0;
+  }
+}
+
+/* iPad / Galaxy Tab and below in landscape */
+@media only screen and (min-width:640px) and (min-height: 640px) and (orientation: landscape){
+  #wp99234-disclaimer_overlay,#wp99234-disclaimer-overlay {
+    padding: 0;
+  }
+}
+
+.wp99234-disclaimer-title {
+  margin-top: 0;
+}
+
+.wp99234-disclaimer-text {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.wp99234-disclaimer-button-area{
+  display: block;
+  bottom:10px;
+  left:30px;
+  right:30px;
+  padding-top: 30px;
+}
+
+h5.wp99234-membership_option_member_benefits_title {
+  font-size: 1.2rem;
+}
+
+.wp99234-membership_benefits {
+  display:none;
+}
+
+.wp99234-billing-details .wp99234_use_existing_card_checkbox {
+  margin-top: 0.40rem;
+  margin-right: 1rem;
+}
+.wp99234-billing-details input[type="checkbox"],
+.wp99234-billing-details label {
+  cursor: pointer;
+}
+
+/** Password field eye **/
+.woocommerce .woocommerce-form .password-input {
+	position: relative;
+}
+.woocommerce .woocommerce-form .password-input .show-password-input {
+    cursor: pointer;
+	text-decoration: none;
+}
+.woocommerce .woocommerce-form .password-input .show-password-input:after {
+	font-family: dashicons;
+    speak: none;
+    font-weight: 400;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    margin-left: .618em;
+    content: "\f177";
+}
+.woocommerce .woocommerce-form .password-input .show-password-input.display-password:after {
+	content: "\f530";
+}
+.woocommerce .woocommerce-form .show-password-input.display-password::after {
+    color: inherit;
+}
+.woocommerce .woocommerce-form .woocommerce-password-hint {
+	display: block;
+}
+
+#wp99234_membership_options {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+}
+#wp99234_membership_options .wp99234-membership_option {
+	list-style: none;
+	border:1px solid transparent;
+	padding:20px;
+	width: 100%;
+	margin: 0;
+}
+
+#wp99234_membership_options .wp99234-membership_option.selected {
+	border-color: #CCC;
+}
+#wp99234_membership_options .wp99234-membership_option.inactive {
+	opacity: 0.6;
+}
+
+/* @todo: Dumped styling from Patina. Needs to be amended. */
+#wp99234_member_registration_form .wp99234-section.chosen-preferences {
+    padding-bottom: 15px;
+    text-align: left;
+}
+
+#wp99234_member_registration_form .wp99234-section.chosen-preferences {
+    color: #000000;
+}
+
+#wp99234_member_registration_form .form-row.form-row-first {
+    width: 45%;
+    float: left;
+}
+
+#wp99234_member_registration_form .form-row.form-row-last {
+    width: 45%;
+    float: right;
+}
+
+#wp99234_member_registration_form .form-submit.form-row {
+    text-align: center !important;
+}
+
+#wp99234_member_registration_form .select2-container--default .select2-selection--single {
+	height: 48px !important;
+}
+#wp99234_member_registration_form .select2-container--default .select2-selection--single .select2-selection__rendered {
+	line-height: 48px;
+}
+#wp99234_member_registration_form .select2-container--default .select2-selection--single .select2-selection__arrow {
+	height: 46px;
+}
+
+.wp99234-membership-description,
+.wp99234-membership_benefits p {
+    text-align: justify;
+}
+
+#order_review table.shop_table.woocommerce-checkout-review-order-table-bak {
+  width: 50% !important;
+  float: left;
+}
+
+.price .wp99234-product-upsell {
+	display: block;
+}
+.entry-summary .price .wp99234-product-upsell {
+	margin: 10px 0;
+}
+
+.wp99234-input_field_text.input-text {
+	width: 100%;
+	font-size: 1.6rem;
+	padding: 1.5rem 1.8rem;
+}
+
+/** Gift Orders **/
+#wp99234-gift-order-message td {
+	padding: 0;
+}
+#wp99234-gift-order-message td > div textarea {
+	resize: vertical;
+	max-height: 200px;
+	min-height: 100px;
+	width: 100%;
+}
